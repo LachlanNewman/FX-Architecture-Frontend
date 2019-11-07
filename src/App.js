@@ -25,7 +25,7 @@ const App = () => {
                             <Link to={'/'}>Home</Link>
                         </li>
                         <li className={'navigation__item'}>
-                            <Link to={'/renderings'}>Renders</Link>
+                            <Link to={'/'}>Renders</Link>
                         </li>
                         <li className={'navigation__item'}>
                             <Link to={'/'}>Link 2</Link>
@@ -38,7 +38,7 @@ const App = () => {
 
                 <Switch>
                     <Route exact path={"/"} component={Home} />
-                    <Route exact path={"/renderings"} component={Renderings}/>
+                    {/*<Route exact path={"/renderings"} component={Renderings}/>*/}
                 </Switch>
             </div>
         </Router>
