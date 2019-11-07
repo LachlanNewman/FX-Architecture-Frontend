@@ -12,4 +12,8 @@
     background-color: $overlay_light;
     height: 100%;
   }
+
+  &__text{
+    margin: 0 $page-margin;
+  }
 }

@@ -1,0 +1,15 @@
+.renders{
+  margin: $page-margin;
+
+  &__content{
+    display: flex;
+  }
+
+  &__image{
+    width: 50%;
+    margin-left: auto;
+    img{
+      width: 100%;
+    }
+  }
+}

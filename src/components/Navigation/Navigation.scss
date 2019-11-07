@@ -1,22 +1,48 @@
 .navigation{
   position: fixed;
   width: 100%;
-  top: 50%;
-  transform: translate(0, -50%);
+  top: 52%;
+  transform: translate(0, -51%);
 
   &__list{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 0 $page-margin;
   }
 
   &__item{
+    $id: &;
     list-style: none;
     background-color: $overlay-dark;
+    max-height: 60px;
     height: 200px;
+    overflow: hidden;
+    width: 80px;
+    transition: 1s ease-in-out;
+    position: relative;
+
+    &--yellow{
+      background-color: $overlay-yellow;
+    }
 
     a{
       color: $color-white;
+      opacity: 0;
       text-decoration: none;
+      position: absolute;
+      bottom: 0;
+      right: 3px;
+    }
+
+    &:hover{
+      max-height: 200px;
+      transition: 1s ease-in-out;
+
+      a{
+        opacity: 1;
+        transition: opacity  0.5s linear;
+      }
     }
   }
 }

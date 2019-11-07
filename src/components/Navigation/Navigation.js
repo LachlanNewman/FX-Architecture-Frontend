@@ -9,13 +9,13 @@ const Navigation = () => {
             <div>
                 <nav className={'navigation'}>
                     <ul className={'navigation__list'}>
-                        <li className={'navigation__item'}>
+                        <li className={'navigation__item navigation__item--yellow'}>
                             <Link to={'/'}>Home</Link>
                         </li>
                         <li className={'navigation__item'}>
                             <Link to={'/'}>Renders</Link>
                         </li>
-                        <li className={'navigation__item'}>
+                        <li className={'navigation__item navigation__item--yellow'}>
                             <Link to={'/'}>Link 2</Link>
                         </li>
                         <li className={'navigation__item'}>
