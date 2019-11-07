@@ -1,0 +1,22 @@
+.navigation{
+  position: fixed;
+  width: 100%;
+  top: 50%;
+  transform: translate(0, -50%);
+
+  &__list{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item{
+    list-style: none;
+    background-color: $overlay-dark;
+    height: 200px;
+
+    a{
+      color: $color-white;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.home{
+  height: 100vh;
+
+  &__background-image{
+    background: url("../../imgs/home_page_landing.jpg");
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__overlay{
+    background-color: $overlay_light;
+    height: 100%;
+  }
+}

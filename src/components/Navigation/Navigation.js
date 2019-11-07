@@ -1,20 +1,9 @@
-import React, {useEffect, useState} from 'react';
-import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom'
+import React from "react";
 
+// Components
+import Home from "../Home/Home";
 
-//Components
-import Home from "./components/Home/Home";
-
-const App = () => {
-
-    const handleScroll =() => {
-        console.log("scroll")
-    }
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll,true);
-    }, [])
-
+const Navigation = () => {
     return (
         <Router>
             <div>
@@ -41,7 +30,7 @@ const App = () => {
                 </Switch>
             </div>
         </Router>
-  )
-}
+    )
+};
 
-export default App;
+export default Navigation;
