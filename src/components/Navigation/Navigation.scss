@@ -1,17 +1,17 @@
-.navigation{
+.navigation {
   position: fixed;
   width: 100%;
   top: 52%;
   transform: translate(0, -51%);
 
-  &__list{
+  &__list {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 $page-margin;
   }
 
-  &__item{
+  &__item {
     $id: &;
     list-style: none;
     background-color: $overlay-dark;
@@ -22,11 +22,7 @@
     transition: 1s ease-in-out;
     position: relative;
 
-    &--yellow{
-      background-color: $overlay-yellow;
-    }
-
-    a{
+    a {
       color: $color-white;
       opacity: 0;
       text-decoration: none;
@@ -35,13 +31,20 @@
       right: 3px;
     }
 
-    &:hover{
+    &:hover {
       max-height: 200px;
       transition: 1s ease-in-out;
 
-      a{
+      a {
         opacity: 1;
-        transition: opacity  0.5s linear;
+        transition: opacity 0.5s linear;
+      }
+    }
+
+    &--yellow{
+      background-color: $overlay-yellow;
+      a {
+        color: $color-black;
       }
     }
   }

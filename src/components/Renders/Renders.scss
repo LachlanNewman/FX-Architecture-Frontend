@@ -1,6 +1,8 @@
 .renders{
   height: 100vh;
-  background-color: $overlay-dark;
+  background: url("../../imgs/gimnasio.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 
   &__container{
     margin: 0 $page-margin;
