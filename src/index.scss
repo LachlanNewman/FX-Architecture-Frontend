@@ -1,3 +1,5 @@
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
 @import "sass/variables";
 
 @import "App";
@@ -5,4 +7,5 @@
 @import "components/Renders/Renders";
 @import "components/Navigation/Navigation";
 @import "components/Landing/Landing";
+@import "components/Gallery/Gallery";
 

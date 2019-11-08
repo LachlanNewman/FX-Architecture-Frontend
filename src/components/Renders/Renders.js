@@ -1,9 +1,15 @@
 import React from "react";
+
+// Components
 import Landing from "../Landing/Landing";
+import Gallery from "../Gallery/Gallery";
 
 const Renders = () => {
     return (
-        <Landing subTitle={'Renders'} backgroundImage={"../../imgs/gimnasio.jpg"}/>
+        <div>
+            <Landing subTitle={'Renders'} backgroundImage={"../../imgs/gimnasio.jpg"}/>
+            <Gallery/>
+        </div>
     )
 }
 
