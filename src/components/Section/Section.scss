@@ -1,0 +1,45 @@
+.section {
+  $id: &;
+
+  &__container {
+    display: flex;
+    height: 50vh;
+
+    #{$id}__side {
+      width: 50%;
+
+      #{$id}__image{
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      #{$id}__context{
+        margin-top: 30px;
+
+        h2{
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    #{$id}__left {
+      order: 1;
+
+      #{$id}__context{
+        margin-left: $page-margin;
+        margin-right: 50px;
+      }
+    }
+
+    #{$id}__right {
+
+      #{$id}__context{
+        margin-right: $page-margin;
+        margin-left: 50px;
+
+      }
+    }
+  }
+}

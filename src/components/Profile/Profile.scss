@@ -1,0 +1,27 @@
+.profile{
+  $id: &;
+
+  #{$id}__container{
+    display: flex;
+    max-height: 200px;
+    margin: 0 $page-margin;
+
+    #{$id}__image{
+      width: 30%;
+
+      img{
+        height: 100%;
+        border-radius: 50%;
+        border: 3px solid $color-black;
+      }
+    }
+
+    #{$id}__content{
+
+    }
+
+    #{$id}__right{
+      margin-left: 50px;
+    }
+  }
+}

@@ -19,7 +19,10 @@ const photos = [
 ]
 
 const Gallery = () => {
-    return <ImageGallery items={photos} />
+    return <ImageGallery
+        items={photos}
+        useBrowserFullscreen={false}
+    />
 
 };
 

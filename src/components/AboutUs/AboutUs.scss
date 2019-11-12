@@ -1,0 +1,14 @@
+.about{
+  $id: &;
+
+  #{$id}__container{
+    margin: $page-margin $page-margin;
+
+    #{$id}__title{
+    }
+
+    #{$id}__content{
+
+    }
+  }
+}

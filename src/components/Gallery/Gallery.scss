@@ -1,4 +1,8 @@
 .image-gallery{
   padding: $page-margin;
   background-color: $color-black;
+
+  &-image{
+    max-width: 700px;
+  }
 }

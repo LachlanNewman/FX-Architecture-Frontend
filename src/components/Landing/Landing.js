@@ -5,7 +5,7 @@ const Landing = (props) => {
 
     return(
         <div className={'landing'}>
-            <div className={'landing__background-image'} style={{background:`url(${props.backgroundImage})`}}>
+            <div className={'landing__background-image'} style={{backgroundImage:`url(${props.backgroundImage})`}}>
                 <div className={'landing__overlay'}>
                     <div className={'landing__text'}>
                         <a href={"/"}><h1 className={'landing__title'}>F|X</h1></a>

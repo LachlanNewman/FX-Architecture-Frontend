@@ -6,7 +6,12 @@ import {Route, Link, BrowserRouter as Router, Switch} from 'react-router-dom'
 import Home from "./components/Home/Home";
 import Renders from "./components/Renders/Renders";
 
-const App = () => {
+const HOME = "HOME";
+const RENDERS = "RENDERS";
+
+const App = () =>{
+
+    const [page,setPage] = useState(HOME);
 
     return (
         <div>
@@ -15,10 +20,11 @@ const App = () => {
                     <nav className={'navigation'}>
                         <ul className={'navigation__list'}>
                             <li className={'navigation__item navigation__item--yellow'}>
-                                <Link to={'/'}>Home</Link>
+                                <Link onClick={()=>setPage(HOME)} to={'/'}>Home</Link>
+                                <Link onClick={()=>setPage(HOME)} to={'/'}>Home</Link>
                             </li>
                             <li className={'navigation__item'}>
-                                <Link to={'/renderings'}>Renders</Link>
+                                <Link onClick={()=>setPage(RENDERS)} to={'/renderings'}>Renders</Link>
                             </li>
                             <li className={'navigation__item navigation__item--yellow'}>
                                 <Link to={'/'}>Link 2</Link>

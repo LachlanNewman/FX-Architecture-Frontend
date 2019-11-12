@@ -1,5 +1,5 @@
 .navigation {
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 52%;
   transform: translate(0, -51%);
@@ -29,6 +29,7 @@
       position: absolute;
       bottom: 0;
       right: 3px;
+      transition: opacity 0.5s linear;
     }
 
     &:hover {
