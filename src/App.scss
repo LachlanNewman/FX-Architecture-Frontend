@@ -18,6 +18,20 @@ a{
   }
 }
 
+label{
+  font-family: $font-main;
+  font-size: 18px;
+}
+
+input,textarea{
+  background: $color_grey-light;
+  border-radius: 5px;
+  border: 1px solid $color_grey;
+  padding: 5px;
+  font-family: $font-secondary;
+  font-size: 18px;
+}
+
 h1{
   font-family: $font-main;
   font-size: 40px;

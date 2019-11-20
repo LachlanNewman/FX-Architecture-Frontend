@@ -1,26 +1,35 @@
-.profile{
+.profile {
   $id: &;
 
-  #{$id}__container{
+  #{$id}__container {
     display: flex;
     max-height: 200px;
-    margin: 0 $page-margin;
+    margin: 0 $page-margin $page-margin $page-margin;
 
-    #{$id}__image{
+    #{$id}__image {
       width: 30%;
 
-      img{
-        height: 100%;
+      img {
+        height: 200px;
+        width: 200px;
         border-radius: 50%;
         border: 3px solid $color-black;
       }
     }
 
-    #{$id}__content{
+    #{$id}__image--right{
+      order: 2;
+    }
+
+    #{$id}__info {
 
     }
 
-    #{$id}__right{
+    #{$id}__info--left {
+      margin-right: 50px;
+    }
+
+    #{$id}__info--right {
       margin-left: 50px;
     }
   }

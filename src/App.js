@@ -5,6 +5,7 @@ import {Route, Link, BrowserRouter as Router, Switch} from 'react-router-dom'
 //Components
 import Home from "./components/Home/Home";
 import Renders from "./components/Renders/Renders";
+import ContactForm from "./components/ContactForm/ContactForm";
 
 const HOME = "HOME";
 const RENDERS = "RENDERS";
@@ -21,7 +22,6 @@ const App = () =>{
                         <ul className={'navigation__list'}>
                             <li className={'navigation__item navigation__item--yellow'}>
                                 <Link onClick={()=>setPage(HOME)} to={'/'}>Home</Link>
-                                <Link onClick={()=>setPage(HOME)} to={'/'}>Home</Link>
                             </li>
                             <li className={'navigation__item'}>
                                 <Link onClick={()=>setPage(RENDERS)} to={'/renderings'}>Renders</Link>
@@ -30,7 +30,7 @@ const App = () =>{
                                 <Link to={'/'}>Link 2</Link>
                             </li>
                             <li className={'navigation__item'}>
-                                <Link to={'/'}>Link 3</Link>
+                                <Link to={'/contact-us'}>Contact Us</Link>
                             </li>
                         </ul>
                     </nav>
@@ -38,6 +38,7 @@ const App = () =>{
                     <Switch>
                         <Route exact path={"/"} component={Home}/>
                         <Route exact path={"/renderings"} component={Renders}/>
+                        <Route exact path={"/contact-us"} component={ContactForm}/>
                     </Switch>
                 </div>
             </Router>
