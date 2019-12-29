@@ -1,33 +1,33 @@
 import React, {useEffect, useState} from 'react';
 
 // API
-import api from '../../api/api'
+import api,{key} from '../../api/api'
 
 import Landing from "../Landing/Landing";
 import AboutUs from "../AboutUs/AboutUs";
-import Profile from "../Profile/Profile";
+import Profiles from "../Profiles/Profiles";
 
 const Home = () => {
 
-    const [profiles,setProfiles] = useState([])
+    const [landingImage,setlandingImage] = useState("");
+    const [subTitle, setSubTitle] = useState("");
+    const [aboutUsTitle,setAboutUsTitle] = useState("");
+    const [aboutUsContent, setAboutUsContent] = useState("");
 
     useEffect(()=> {
-        api.get("/profiles").then((onSuccess) => {
-            setProfiles(onSuccess.data)
+        api.get("/singletons/get/Home?token=" + key).then((onSuccess) => {
+            console.log(onSuccess.data)
+            setlandingImage(onSuccess.data.landingImage.path)
+            setSubTitle(onSuccess.data.subTitle);
+            setAboutUsContent(onSuccess.data.aboutUs)
         })
     },[])
 
     return (
         <div>
-        <Landing title={'home'} backgroundImage={"../../imgs/home.jpg"}/>
-        <AboutUs/>
-
-            {profiles.map((value,index)=>{
-                let side;
-                index % 2 == 0 ? side = 'left' : side = 'right'
-                return <Profile profile={value} side={side}/>
-            })}
-
+        <Landing title={subTitle} backgroundImage={landingImage}/>
+        <AboutUs title={aboutUsTitle} content={aboutUsContent}/>
+        <Profiles/>
         </div>
     )
 };

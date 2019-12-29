@@ -1,10 +1,24 @@
-import React from "react";
+import React, {useEffect, useState} from 'react';
+
 import Landing from "../Landing/Landing";
+import api, {key} from "../../api/api";
 
 const ContactForm = () => {
+
+    const [landingImage,setlandingImage] = useState("");
+    const [subTitle, setSubTitle] = useState("");
+
+    useEffect(()=> {
+        api.get("/singletons/get/ContactUs?token=" + key).then((onSuccess) => {
+            console.log(onSuccess.data)
+            setlandingImage(onSuccess.data.landingImage.path)
+            setSubTitle(onSuccess.data.subTitle);
+        })
+    },[])
+
     return (
         <div>
-            <Landing title={'contact'}/>
+            <Landing title={subTitle} backgroundImage={landingImage}/>
             <div className={'contact-form'}>
                 <div className={'contact-form__container'}>
                     <form className={'contact-form__form'}>
