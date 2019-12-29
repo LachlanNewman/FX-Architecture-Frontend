@@ -3,18 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="657ed2a4-c586-49f8-be14-fa092c5872a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AboutUs/AboutUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutUs/AboutUs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContactForm/ContactForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactForm/ContactForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Landing/Landing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Landing/Landing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profiles/Profiles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profiles/Profiles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Renders/Renders.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Renders/Renders.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Section/Section.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Section/Section.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +76,7 @@
       <workItem from="1573521184186" duration="17209000" />
       <workItem from="1574160056599" duration="623000" />
       <workItem from="1577588226161" duration="170000" />
-      <workItem from="1577588411743" duration="9326000" />
+      <workItem from="1577588411743" duration="10707000" />
     </task>
     <servers />
   </component>

@@ -18,6 +18,9 @@ const Renders = () => {
     const [exteriorRenderImage,setExteriorRenderImage] = useState("");
     const [exteriorRenderTitle,setExteriorRenderTitle] = useState("");
     const [exteriorRenderContent,setExteriorRenderContent] = useState("");
+    const [landscapeRenderImage,setLandscapeRenderImage] = useState("");
+    const [landscapeRenderTitle,setLandscapeRenderTitle] = useState("");
+    const [landscapeRenderContent,setLandscapeRenderContent] = useState("");
 
 
     useEffect(()=> {
@@ -31,13 +34,18 @@ const Renders = () => {
             setExteriorRenderImage(onSuccess.data.exteriorRenderImage.path)
             setExteriorRenderTitle(onSuccess.data.exteriorRenderTitle);
             setExteriorRenderContent(onSuccess.data.exteriorRenderContent);
+            setLandscapeRenderImage(onSuccess.data.landscapeRenderImage.path)
+            setLandscapeRenderTitle(onSuccess.data.landscapeRenderTitle);
+            setLandscapeRenderContent(onSuccess.data.landscapeRenderContent);
         })
     },[])
+    
     return (
         <div>
             <Landing title={subTitle} backgroundImage={landingImage}/>
             <Section title={interiorRenderTitle} content={interiorRenderContent} image={interiorRenderImage} side={'left'}/>
             <Section title={exteriorRenderTitle} content={exteriorRenderContent} image={exteriorRenderImage} side={'right'}/>
+            <Section title={landscapeRenderTitle} content={landscapeRenderContent} image={landscapeRenderImage} side={'left'}/>
 
             {/*{*/}
             {/*    renders.map((value,index)=> {*/}

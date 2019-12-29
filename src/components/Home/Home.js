@@ -19,7 +19,8 @@ const Home = () => {
             console.log(onSuccess.data)
             setlandingImage(onSuccess.data.landingImage.path)
             setSubTitle(onSuccess.data.subTitle);
-            setAboutUsContent(onSuccess.data.aboutUs)
+            setAboutUsTitle(onSuccess.data.aboutUsTitle)
+            setAboutUsContent(onSuccess.data.aboutUsContent)
         })
     },[])
 
