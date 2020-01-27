@@ -6,13 +6,12 @@ import {Route, Link, BrowserRouter as Router, Switch} from 'react-router-dom'
 import Home from "./components/Home/Home";
 import Renders from "./components/Renders/Renders";
 import ContactForm from "./components/ContactForm/ContactForm";
+import Videos from "./components/Videos/Videos";
 
 const HOME = "HOME";
 const RENDERS = "RENDERS";
 
 const App = () =>{
-
-    const [page,setPage] = useState(HOME);
 
     return (
         <div>
@@ -21,13 +20,13 @@ const App = () =>{
                     <nav className={'navigation'}>
                         <ul className={'navigation__list'}>
                             <li className={'navigation__item navigation__item--yellow'}>
-                                <Link onClick={()=>setPage(HOME)} to={'/'}>Home</Link>
+                                <Link to={'/'}>Home</Link>
                             </li>
                             <li className={'navigation__item'}>
-                                <Link onClick={()=>setPage(RENDERS)} to={'/renderings'}>Renders</Link>
+                                <Link to={'/renderings'}>Renders</Link>
                             </li>
                             <li className={'navigation__item navigation__item--yellow'}>
-                                <Link to={'/'}>Link 2</Link>
+                                <Link to={'/videos'}>Videos</Link>
                             </li>
                             <li className={'navigation__item'}>
                                 <Link to={'/contact-us'}>Contact Us</Link>
@@ -38,6 +37,7 @@ const App = () =>{
                     <Switch>
                         <Route exact path={"/"} component={Home}/>
                         <Route exact path={"/renderings"} component={Renders}/>
+                        <Route exact path={"/videos"} component={Videos}/>
                         <Route exact path={"/contact-us"} component={ContactForm}/>
                     </Switch>
                 </div>

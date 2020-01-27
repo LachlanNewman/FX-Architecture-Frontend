@@ -1,7 +1,10 @@
 import React, {useEffect, useState} from 'react';
 
-import Landing from "../Landing/Landing";
+// Api
 import api, {key} from "../../api/api";
+
+// Components
+import Landing from "../Landing/Landing";
 
 const ContactForm = () => {
 
@@ -10,7 +13,6 @@ const ContactForm = () => {
 
     useEffect(()=> {
         api.get("/singletons/get/ContactUs?token=" + key).then((onSuccess) => {
-            console.log(onSuccess.data)
             setlandingImage(onSuccess.data.landingImage.path)
             setSubTitle(onSuccess.data.subTitle);
         })

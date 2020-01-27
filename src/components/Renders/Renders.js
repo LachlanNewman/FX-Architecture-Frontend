@@ -25,7 +25,6 @@ const Renders = () => {
 
     useEffect(()=> {
         api.get("/singletons/get/Renders?token=" + key).then((onSuccess) => {
-            console.log(onSuccess.data)
             setlandingImage(onSuccess.data.landingImage.path)
             setSubTitle(onSuccess.data.subTitle);
             setInteriorRenderImage(onSuccess.data.interiorRenderImage.path)
@@ -46,16 +45,8 @@ const Renders = () => {
             <Section title={interiorRenderTitle} content={interiorRenderContent} image={interiorRenderImage} side={'left'}/>
             <Section title={exteriorRenderTitle} content={exteriorRenderContent} image={exteriorRenderImage} side={'right'}/>
             <Section title={landscapeRenderTitle} content={landscapeRenderContent} image={landscapeRenderImage} side={'left'}/>
-
-            {/*{*/}
-            {/*    renders.map((value,index)=> {*/}
-            {/*        let side;*/}
-            {/*        index % 2 == 0? side = 'left': side = 'right';*/}
-            {/*        return <Section  side={side}/>*/}
-            {/*    })*/}
-            {/*}*/}
         </div>
     )
-}
+};
 
 export default Renders;

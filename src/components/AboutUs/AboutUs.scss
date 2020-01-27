@@ -2,8 +2,10 @@
   $id: &;
 
   #{$id}__container{
-    margin: $page-margin $page-margin;
-
+    margin: $mobile-page-margin $mobile-page-margin;
+    @include desktop() {
+      margin: $page-margin $page-margin;
+    }
     #{$id}__title{
     }
 

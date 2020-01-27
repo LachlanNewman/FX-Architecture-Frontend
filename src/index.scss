@@ -1,6 +1,7 @@
 @import "~react-image-gallery/styles/scss/image-gallery.scss";
 
 @import "sass/variables";
+@import "sass/mixins";
 
 @import "App";
 @import "components/Home/Home";
@@ -12,4 +13,5 @@
 @import "components/AboutUs/AboutUs";
 @import "components/Profiles/Profiles";
 @import "components/ContactForm/ContactForm";
+@import "components/Videos/Videos";
 

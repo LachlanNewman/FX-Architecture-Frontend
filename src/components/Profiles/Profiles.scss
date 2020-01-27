@@ -2,12 +2,16 @@
   $id: &;
 
   #{$id}__container {
-    display: flex;
-    max-height: 200px;
-    margin: 0 $page-margin $page-margin $page-margin;
+    margin: 0 $mobile-page-margin $mobile-page-margin $mobile-page-margin;
+    @include desktop() { margin: 0 $page-margin $page-margin $page-margin;}
+    @include desktop() { max-height: 200px;}
+    @include large-phone(){ display: flex;}
 
     #{$id}__image {
-      width: 30%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      @include large-phone(){ width: 30%;}
 
       img {
         height: 200px;
@@ -22,15 +26,21 @@
     }
 
     #{$id}__info {
-
+      @include tablet-max() {
+        margin: 0;
+        text-align: center;
+        margin-top: 20px;
     }
 
     #{$id}__info--left {
-      margin-right: 50px;
+      margin-left: $mobile-page-margin;
+      @include desktop() { margin-left: $page-margin;}
     }
 
     #{$id}__info--right {
-      margin-left: 50px;
+      margin-right: $mobile-page-margin;
+      @include desktop() { margin-right: $page-margin;}
+      }
     }
   }
 }

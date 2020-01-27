@@ -13,6 +13,9 @@
   }
 
   &__text{
-    margin: 0 $page-margin;
+    margin: 0 $mobile-page-margin;
+    @include desktop(){
+      margin: 0 $page-margin;
+    }
   }
 }

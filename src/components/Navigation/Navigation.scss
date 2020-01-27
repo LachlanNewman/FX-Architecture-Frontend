@@ -8,7 +8,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 $page-margin;
+    margin: 0 $mobile-page-margin;
+    @include desktop() {
+      margin: 0 $page-margin;
+    }
   }
 
   &__item {
@@ -18,7 +21,7 @@
     max-height: 60px;
     height: 200px;
     overflow: hidden;
-    width: 80px;
+    width: 100px;
     transition: 1s ease-in-out;
     position: relative;
 
@@ -42,8 +45,9 @@
       }
     }
 
-    &--yellow{
+    &--yellow {
       background-color: $overlay-yellow;
+
       a {
         color: $color-black;
       }
